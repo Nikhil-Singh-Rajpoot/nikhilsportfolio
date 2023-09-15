@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Portfolio Profile</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+
+		}
+
+		html {
+			overflow-x: hidden;
+		}
+
+		body {
+			overflow-x: hidden;
+			background-color: rgb(3, 3, 79);
+			color: white;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 43px;
+			background-color: rgb(33, 33, 209);
+			font-variant: small-caps;
+
+
+		}
+
+		nav ul {
+			display: flex;
+			justify-content: space-evenly;
+			/* align-items: start; */
+
+		}
+
+		nav ul li {
+			list-style-type: none;
+			margin-left: 25px;
+
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		nav ul li a:hover {
+			color: rgb(153, 153, 250);
+			font-size: 1.02rem;
+		}
+
+		.left {
+			padding-bottom: 12px;
+			height: 30%;
+			width: 40%;
+			text-align: center;
+			font-size: 1.3rem;
+
+		}
+
+		/* .left img{
+	height: 130%;
+	width: 20%;
+	
+} */
+		.mainsec {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin: 70px 0;
+
+		}
+
+		.mainsec>div {
+			width: 30%;
+		}
+
+		.fristsec {
+
+			font-size: 2.4rem;
+			/* background-color: red */
+		}
+
+		.name {
+			color: rgb(164, 81, 243);
+		}
+
+
+		.secondsec img {
+			width: 80%;
+			margin: 50px 0;
+			border-radius: 50%;
+			box-shadow: 10px 15px 20px 8px rgba(0, 0, 0, 0.7);
+			transition: all ease 0.3s;
+		}
+		.secondsec img:hover{
+			box-shadow: 0px 10px 14px 5px rgba(40, 70, 190, 0.7);
+			width: 81%;
+		}
+
+		#element {
+			color: rgb(164, 81, 243);
+		}
+
+		main hr {
+			border: 0;
+			background: rgb(162, 82, 238);
+			height: 1.3px;
+			margin: 40px 80px;
+		}
+
+		.maintwo {
+			max-width: 100vw;
+			margin: auto;
+			height: 95vh;
+			margin-left: 130px;
+		}
+
+		.maintwo h1 {
+			font-size: 1.6rem;
+		}
+
+		.whatdone {
+			color: gray;
+			font-size: 0.8rem;
+		}
+
+		.box {
+			border: 0;
+			background: white;
+			height: 1.3px;
+			margin: 50px 0;
+			display: flex;
+			justify-content: space-around;
+			width: 76vw;
+		}
+
+		.vertical {
+			background: white;
+			height: 80px;
+			width: 1px;
+
+		}
+
+		.image-one {
+			width: 30px;
+			position: relative;
+			top: -34px;
+			margin: -14px;
+			position: relative;
+		}
+
+		.image-one-java {
+			width: 30px;
+			position: relative;
+			top: -50px;
+			margin: -14px;
+			position: relative;
+		}
+
+
+		.vertical-title {
+			position: relative;
+			width: 150px;
+			top: 70px;
+		}
+
+		.vertical-title-java {
+			position: relative;
+			width: 150px;
+			top: 60px;
+		}
+
+		.vertical-dec {
+			position: relative;
+			top: 80px;
+			width: 190px;
+			font-size: 10px;
+			color: rgb(156, 126, 184);
+		}
+
+		.vertical-dec-java {
+			position: relative;
+			top: 70px;
+			width: 190px;
+			font-size: 10px;
+			color: rgb(156, 126, 184);
+		}
+
+		footer {
+			background-color: rgb(36, 34, 34);
+			width: 100%;
+		}
+
+		.both-footer {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.footer-left {
+			width: 20%;
+			height: 23vh;
+			margin-left: 110px;
+			/* background-color: red; */
+
+		}
+
+		.footer-right {
+			width: 30%;
+
+		}
+
+		.icons img {
+			padding-top: 18px;
+			width: 30px;
+		}
+
+		.icons-call img {
+			padding-top: 18px;
+			padding-left: 20px;
+			margin-left: -50px;
+			width: 30px;
+		}
+
+		.icons-mail img {
+			padding-top: 18px;
+			padding-left: 165px;
+			margin-left: -50px;
+			width: 30px;
+		}
+
+		.image-icon {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+		}
+
+		.text-icons {
+			padding: 20px 0;
+			padding-bottom: 15px;
+			font-size: 0.8rem;
+			padding-top: 20px;
+		}
+
+		.text-icons-mail {
+			padding: 25px 0;
+			padding-bottom: 20px;
+			font-size: 0.8rem;
+			padding-left: 3px;
+		}
+
+		.icon-dec {
+			font-size: 0.5rem;
+			color: aquamarine;
+			width: 50%;
+			padding-left: 120px;
+			margin-top: -15px;
+		}
+
+		.about-text {
+			margin-left: 30px;
+			padding-bottom: 5px;
+			padding-top: 20px;
+		}
+
+		.dec-about {
+			font-size: 0.5rem;
+			width: 40%;
+			padding-left: 50px;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: space-between;
+			width: 130px;
+			padding-left: 50px;
+			padding-top: 20px;
+		}
+
+		.right {
+			width: 60%;
+		}
+
+		.logoimg img {
+			width: 20px;
+		}
+
+		.logoimg img:hover {
+			color: white;
+			size: 22px;
+		}
+
+		.copyright {
+			font-size: 0.8rem;
+			color: gray;
+			text-align: center;
+			padding: 8px 0;
+		}
+
+		.copyrighticon {
+			font-size: 1rem;
+		}
+
+
+		/* #side{
+			margin-right: 10px;
+			display: none;
+			font-size: 28px;
+		} */
+		.mobile-navbar-btn {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.mobile-nav-icon {
+			background: transparent;
+			cursor: pointer;
+			display: none;
+			width: 2rem;
+			height: 2rem;
+		}
+
+		.mobile-nav-icon[name="close-outline"] {
+			display: none;
+		}
+
+
+
+
+
+		@media only screen and (min-width:200px) and (max-width:867px) {
+
+			header {
+				width: 120%;
+				flex-wrap: wrap;
+			}
+
+			nav {
+				width: 100%;
+			}
+
+			.left {
+				font-size: 1rem;
+				width: 50%;
+				flex-basis: 40%;
+			}
+
+			.right {
+				width: 50%;
+			}
+
+			.right ul li {
+				padding: 5px 5px;
+				margin: 0px 0px;
+			}
+
+			.mainsec {
+				width: 100%;
+				flex-wrap: wrap;
+			}
+
+			.fristsec {
+				font-size: 1.4rem;
+				margin-left: 5px;
+				flex-basis: 50%;
+			}
+
+			.secondsec {
+				flex-basis: 50%;
+			}
+
+			.maintwo {
+				width: 100%;
+			}
+
+			.box {
+				flex-wrap: wrap;
+				width: 120%;
+			}
+
+			/* .vertical-title {
+				width: 25%;
+				flex-basis: 40%;
+			}
+
+			.vertical-dec {
+				width: 25%;
+			}
+
+			.vertical-title-java {
+				width: 25%;
+				flex-basis: 40%;
+			}
+
+			.vertical-dec-java {
+				width: 25%;
+			} */
+
+			.footer {
+				width: 120%;
+			}
+
+		}
+
+		@media (max-width:895px) {
+
+			/* #side{
+				display: block;
+			}
+			.right ul {
+				width: 100%;
+				height: 100vh;
+				
+			}
+			.right ul li{
+				display: block;
+				text-align: center;
+			} */
+			header {
+				width: 100%;
+			}
+
+			.right {
+				/* display: none; */
+				width: 50%;
+				height: 100vh;
+				background-color: rgb(160, 216, 197);
+				position: absolute;
+				top: 0;
+				left: 50%;
+				display: flex;
+				justify-content: center;
+				/* align-items: center; */
+
+				transform: translate(100%);
+				transition: all 0.5s linear;
+
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+			}
+
+			nav {
+				position: relative;
+			}
+
+			nav ul {
+				display: flex;
+				justify-content: start;
+				padding: 100px 6px;
+				margin: 61px 70px;
+			}
+
+			.footer {
+				width: 100%;
+			}
+
+			.mobile-nav-icon {
+				display: block;
+				z-index: 999;
+				border: 3px;
+			}
+
+			ul {
+				flex-direction: column;
+			}
+
+			.active .right {
+				transform: translateX(0);
+				opacity: 1;
+				visibility: visible;
+				pointer-events: auto;
+			}
+
+			.active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+				display: block;
+			}
+
+			.active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+				display: none;
+			}
+			
+			.vertical .vertical-title{
+				width: 100%;
+			}
+			.vertical .vertical-dec{
+				width: 7vh;
+				font-size: 8px;
+				
+			}
+			.maintwo{
+				margin-left: 10px;
+				margin-right: 0;
+			}
+			.icon-dec{
+				padding-left: 35px;
+
+			}
+			.copyright{
+				padding-top: 30px;
+			}
+			.maintwo h1{
+				font-size: 1.2rem;
+			}
+			.whatdone{
+				font-size: 0.5rem;
+			}
+			.vertical-dec{
+				width: 100%;
+			}
+			.vertical-dec-java{
+				width: 7vh;
+				font-size: 8px;
+			}
+			.box{
+				width: 90%;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<header class="header ">
+		<nav class="navbar">
+
+			<div class="left">Nikhil's Portfolio</div>
+			<div class="right">
+				<ul>
+
+					<li><a href="/">About</li></a>
+					<li><a href="/">Services</li></a>
+					<li><a href="projects.html" target="_nikhil">Projects</li></a>
+					<li><a href="contect.html" target="_blank">Contact Me</li></a>
+				</ul>
+			</div>
+			<div class="mobile-navbar-btn">
+				<ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+				<ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="mainsec">
+			<div class="fristsec">
+				Hi, My name is <span class="name">Nikhil</span>
+				<div>and I am a Passionate</div>
+
+				<span id="element"></span>
+			</div>
+			<div class="secondsec"> <img src="NikhilPhoto.png" alt="Main_Photo">
+			</div>
+		</section>
+		<hr>
+		<section class="maintwo">
+			<span class="whatdone"> What I have done so far</span>
+			<h1>Work in Acedamic</h1>
+
+			<div class="box">
+				<div class="vertical"><img class="image-one" src="1.png" alt="frist_image">
+					<div class="vertical-title">
+						 HTML/CSS
+					</div>
+					<div class="vertical-dec">I am learned HTML for building a basic structure of websites and i am also covered good
+						 topic in HTML like table concept and div, nested div, and more element. And i also learned CSS 
+						 for the design our HTML structure. In CSS we are learned basic topic like flip-card, justify content and flex-box etc..</div>
+				</div>
+				<div class="vertical"><img class="image-one-java" src="2.png" alt="frist_image">
+					<div class="vertical-title-java">
+						 Java
+					</div>
+					<div class="vertical-dec-java"> I learned java Programming language and i have good knowledge of java language.
+						 In java we are learned core concept of java like oops programming, fundamentals  and learned some basics advance concepts like JDBC
+						  ,Spring, Swing,(AWT), Socket Programming etc.
+						 And  I also build project  like ATM System, Chat Application by using java concept Swing(AWT) and Socket Programming.
+					</div>
+				</div>
+				<div class="vertical"><img class="image-one" src="3.png" alt="frist_image">
+					<div class="vertical-title">
+						MySql/DBMS
+					</div>
+					<div class="vertical-dec">Learned MySQL and RDBMS for storing the data and maintaining the data in 
+						database and after the learn this concept we has build own projects like online voting system and ATM System etc.
+						 We has learned DDl ,DML,DCl and TCL commends in RDBMS.
+						 And we  also learned joins Normalization and Schema concepts..</div>
+				</div>
+				<div class="vertical"><img class="image-one" src="4.png" alt="frist_image">
+					<div class="vertical-title">
+						.Net C#
+					</div>
+					<div class="vertical-dec">I have a basic knowledge of .Net and .Net Core concept and I also learned c sharp programming in .Net.
+						 I have basic knowledge of c sharp language but not a good practice or commend on language.</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer>
+		<div class="both-footer">
+			<div class="footer-left">
+				<div class="image-icon">
+					<div class="icons"><img src="location.png"></div>
+					<div class="text-icons">Ghazipur,233226</div>
+				</div>
+				<div class="icon-dec">
+					Uttar Pradesh, Ghazipur,Village Bhojapur,Kasimabaad Tehsil
+				</div>
+
+				<div class="image-icon">
+					<div class="icons-call"><img src="call.png"></div>
+					<div class="text-icons">7272090004,</div>
+				</div>
+				<div class="icon-dec">
+					Alternet Mobile Number is 9838229115
+				</div>
+
+				<div class="image-icon">
+					<div class="icons-mail"><img src="mail.png"></div>
+					<div class="text-icons-mail">nikhilkumarsingh2000@gmail.com</div>
+				</div>
+
+			</div>
+			<div class="footer-right">
+				<div class="about-text">About the Portfolio</div>
+				<div class="dec-about">
+					In this portfolio we are declared all things related to what we learned what we do etc.
+					 And you can see my project on my linkedin profile.
+				</div>
+				<div class="logo">
+					<div class="logoimg"> <a href="https://www.facebook.com/nikhil.kumarsingh.5661" target="_blank"><img
+								src="facebook.png"></a></div>
+					<div class="logoimg"> <a
+							href="https://api.whatsapp.com/send/?phone=9838229115&text&type=phone_number&app_absent=0"
+							target="_blank"><img src="whatsapp.png"></a></div>
+					<div class="logoimg"> <img src="tuter.png"></div>
+					<div class="logoimg"> <a
+							href="https://www.instagram.com/nikkhil__rajpoot/?igshid=MzRlODBiNWFlZA%3D%3D"
+							target="_blank"><img src="instragram.png"></a></div>
+					<div class="logoimg"> <a href="https://www.linkedin.com/in/nikhilsingh9312"
+							target="_blank"><img src="lindin.png"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">www.nikhilsportfolio.com <i class="copyrighticon">&#169;</i> |All rights reseved
+		</div>
+	</footer>
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed('#element', {
+			strings: ['Web Developer', 'Java Developer', 'Software Developer'],
+			typeSpeed: 40,
+		});
+	</script>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="script.js"> </script>
+</body>
+
+</html>

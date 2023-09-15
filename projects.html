@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-Projects</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    body {
+      background-color: rgb(3, 3, 79);
+      /* background-color: rgb(237, 191, 191);*/
+      /* background: url("bg2.jpg") no-repeat;*/
+      background-size: cover;
+    }
+
+    .background {
+      /* width: 100%;
+      height: 100%; */
+      /* background-color: rgba(0, 0, 1, 0.453); */
+      position: relative;
+    }
+
+    .contener {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .left-contener {
+      padding-top: 50px;
+      margin-left: 20px;
+      width: 57%;
+      /* text-align: center; */
+      /* height: 50vh; */
+      /* background-color: aquamarine; */
+      padding-left: 170px;
+    }
+
+    .right-contener,
+    .left-contener {
+      margin-top: 100px;
+
+    }
+
+    .right-contener {
+
+
+      transition: all ease 0.5s;
+      width: 40%;
+    }
+
+    .right-contener:hover {}
+
+    .right-contener img {
+      width: 85%;
+      background-size: cover;
+      height: 80%;
+      transition: all ease 0.4s;
+    }
+
+    .right-contener img:hover {
+      width: 90%;
+    }
+
+    .dec {
+      width: 70%;
+      height: 50%;
+      font-size: 0.8rem;
+      padding-top: 10px;
+      margin-left: 100px;
+      transition: all ease 0.3s;
+      color: gray; 
+    }
+
+    .dec:hover {
+      color:rgba(238, 231, 231, 0.945)
+    }
+
+    .left-contener #element {
+      font-size: 2.1rem;
+      margin-left: 50px;
+      color: rgb(164, 81, 243);
+      margin-top: 20px;
+
+    }
+
+    .left-contener #elementchatting {
+      font-size: 2.1rem;
+      margin-left: 50px;
+      color: rgb(164, 81, 243);
+      margin-top: 20px;
+
+    }
+
+    .contener-left-2 {
+      width: 40%;
+    }
+
+    .contener-left-2 img {
+      width: 85%;
+      height: 85%;
+      margin-left: 70px;
+      transition: all ease 0.4s;
+    }
+
+     .contener-left-2 img:hover{
+      width: 90%;
+     }
+    .left-contener .title{
+      color: gray; 
+			font-size: 1rem;
+      padding-left: 80px;
+
+    }
+
+    .contener-right-2 #elementatm {
+      font-size: 2.1rem;
+      margin-left: 50px;
+      color: rgb(164, 81, 243);
+      margin-top: 20px;
+    }
+
+    .contener-right-2 .dec {
+      width: 70%;
+      padding-top: 10px;
+      margin-left: 100px;
+      transition: all ease 0.3s;
+      color: gray; 
+    }
+    .contener-right-2 .dec:hover{
+      color:rgba(238, 231, 231, 0.945)
+    }
+    .contener-right-2 .title{
+      color: gray; 
+			font-size: 1rem;
+      padding-left: 80px;
+    }
+    .contener-right-2 {
+      padding-top: 50px;
+      margin-left: 20px;
+      width: 57%;
+      /* text-align: center; */
+    
+      /* background-color: aquamarine; */
+      padding-left: 170px;
+    }
+
+    @media (max-width:895px) {
+      .contener {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .left-contener {
+        flex-basis: 100%;
+        margin-top: 0;
+        padding-left: 20px;
+       
+      }
+
+      .right-contener img {
+        margin-left: 40%;
+      }
+
+      .right-contener {
+        padding-top: 10px;
+        margin-top: 0;
+        margin-left: 10%;
+      }
+
+      .contener-left-2 {
+        padding-top: 10px;
+        margin-top: 0;
+        margin-left: 10%;
+      }
+
+      .contener-left-2 img {
+        margin-left: 40%;
+      }
+
+      .contener-right-2 {
+        flex-basis: 100%;
+        margin-top: 0;
+        padding-left: 20px;
+       
+        padding-top: 0;
+      }
+
+      .contener-right-2 #elementatm {
+        margin-left: 0;
+      }
+
+      .contener-right-2 .dec {
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background">
+    <div class="contener">
+      <div class="left-contener">
+        <span id="element"></span>
+        <h3 class="title">Web Application</h3>
+        <div class="dec">
+          “Online Voting System” is an online voting technique these in this system people who have citizenship of India and who’s is 
+           above 18 years of age and any gender can give her or his vote on line without going to physical polling station.<br>
+          There is a database which is maintained in which all the name of vaters with complete information is stored.<br>
+          In online voting system of voter can use his\ her voting right on line without any difficulty his\her has to be registered first for him\ her to vote.<br><br><hr>
+
+          •	Online voting system,This is my academic final year project.
+           On this project we are use simple CRUD Operation, 
+          <br>•	Use Technology: HTML,CSS, Basic JavaScript, Xampp Server, SQL for database.
+          •	In this project we are use basicllay three madule Fist is Voter and Second is Candidate madule.  
+</div>
+      </div>
+      <div class="right-contener">
+        <img src="online-voting.png" alt="online-voting">
+      </div>
+    </div>
+
+    <div class="contener" data-aos="flip-left">
+      <div class="contener-left-2">
+        <img src="atm.jpg" alt="atm">
+      </div>
+      <div class="contener-right-2">
+        <span id="elementatm"></span>
+        <h3 class="title">Desktop Application</h3>
+        <div class="dec">
+          We build a Desktop Application by using Java, Swing(AWT), and JDBC concepts, In the project, a new user first creates an account and after creating an account we access all features of the project Already existing users log in, and after login, they access all feature of the project.  
+When one creates an account they complete three phases and then create an account successfully.<br>
+Personal Details    Additional Details    Account Details.<br>
+Provide Features:-<br><hr>
+•	Create Account  We are creating an account like(Apple for ATM).
+•	Login  Login for Deposit or Withdrawal amount by ATM.
+•	Balance Inquiry  If you want to check your bank balance.
+•	Deposit Money If you want to add money to your bank then Deposit.
+•	Mini Statement Using Mini  Statement to see your bank statement.
+•	Fast Cash Using Fast Cash features your withdrawal amount in the bank. 
+•	Change Pin If you want to change your pin then change your pin.
+
+</div>
+      </div>
+    </div>
+
+    <div class="contener" data-aos="flip-left">
+      <div class="left-contener">
+        <span id="elementchatting"></span>
+        <h3 class="title">Desktop Application</h3>
+        <div class="dec">
+         
+We built a Desktop Application by using Java, Swing(AWT), and Socket Programming concepts,
+ In the project, we used to module client and server and when the server is online the client sends the request and the server accepts the request of the client.  
+Server (Nikhil)   Client(Abhishek)   <br> 
+Provide Features:-<br><hr>
+•	Server (Nikhil)  Server(Nikhil) can send message of client(Abhishek).
+•	Client(Abhishek)  Client(Abhishek) can send massage when Server(Nikhil) is online .
+
+</div>
+      </div>
+      <div class="right-contener">
+        <img src="chatting.png" alt="online-voting">
+      </div>
+    </div>
+
+
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Online Voting System'],
+      typeSpeed: 50,
+    });
+
+    var typed = new Typed('#elementatm', {
+      strings: ['ATM Management System'],
+      typeSpeed: 50,
+    });
+
+    var typed = new Typed('#elementchatting', {
+      strings: ['Chatting Application'],
+      typeSpeed: 50,
+    });
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 270,
+    duration: 1000, 
+  });
+</script>
+</body>
+
+</html>

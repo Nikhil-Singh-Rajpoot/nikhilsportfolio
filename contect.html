@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Contect with Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(3, 3, 79);
+        }
+
+        .contener {
+            margin: 50px auto;
+            width: 80%;
+        }
+
+        .contener h1 {
+            color: rgb(164, 81, 243);
+        }
+
+        .contener-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contener-left {
+            padding-left: 40px;
+            padding-top: 10px;
+            width: 60%;
+            background-color: white;
+
+        }
+
+        .contener-left h3 {
+            color: #1c00b5;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding-left: 60px;
+            padding-top: 50px;
+        }
+
+        .message {
+            padding-left: 100px;
+            padding-top: 10px;
+        }
+
+
+
+        .contener p {
+            margin: 15px 15px;
+            font-size: 0.7rem;
+            color: rgb(121, 118, 118);
+        }
+
+        .box {
+            background-color: blueviolet;
+            width: 0px;
+            margin-top: 5px;
+            rotate: 45deg;
+            margin-left: 0p;
+            padding: 28px 16px;
+        }
+
+        .input-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 10px;
+        }
+
+        .input-row.input-group {
+            margin: 5px 5px;
+
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            padding-bottom: 5px;
+        }
+
+        textarea {
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            padding-bottom: 5px;
+            width: 80%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 6px;
+            display: block;
+            color: #1c00b5;
+        }
+
+        button {
+            background: #1c00b5;
+            width: 100px;
+            border: none;
+            outline: none;
+            color: #fff;
+            height: 35px;
+            border-radius: 30px;
+            margin: 35px 30px;
+            box-shadow: 0px 10px 15px 5px rgba(30, 50, 181, 0.3);
+
+        }
+
+        button:hover {
+            background: #3d12ea;
+            box-shadow: none;
+        }
+
+        /* ---contener right css--- */
+
+        .contener-right h3 {
+            color: #1c00b5;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding-left: 60px;
+            padding-top: 50px;
+        }
+
+        .contener-right {
+
+            width: 40%;
+            background-color: blueviolet;
+            margin-top: 3px;
+
+        }
+
+        tr td:first-child {
+            padding-right: 20px;
+            padding-left: 30px;
+        }
+
+        tr td {
+            font-size: 0.8rem;
+            padding-top: 20px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 35px;
+            margin-bottom: 90px;
+            padding-left: 100px;
+            padding-right: 156px;
+        }
+
+        .links img {
+            width: 20px;
+        }
+
+
+        @media only screen and (min-width:200px) and (max-width: 567px) {
+            .contener {
+                width: 100%;
+            }
+
+            .contener-box {
+                width: 100%;
+                flex-wrap: wrap;
+
+            }
+
+            .contener-left {
+                width: 100%;
+                flex-basis: 100%;
+                padding-left: 10px;
+                margin: 10px 10px;
+
+            }
+
+            .message {
+                padding-left: 10px;
+            }
+
+            .contener-right {
+                flex-basis: 100%;
+                margin: 10px 10px;
+            }
+
+            .contener h1 {
+                text-align: center;
+            }
+
+            .contener p {
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contener">
+        <h1>Contact With Us</h1>
+        <p></p>
+        <div class="contener-box">
+            <div class="contener-left">
+                <h3>Send your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Frist Name:</label>
+                            <input type="text" placeholder="Enter Frist Name">
+                        </div>
+                        <div class="input-group">
+                            <label>Last Name:</label>
+                            <input type="text" placeholder="Enter Last Name">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Phone:</label>
+                            <input type="text" placeholder="Enter Phone Number">
+                        </div>
+                        <div class="input-group">
+                            <label>Email:</label>
+                            <input type="email" placeholder="Enter Email">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label>Message</label>
+                        <textarea rows="3" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">SEND</button>
+                </form>
+
+            </div>
+            <div class="contener-right">
+                <div class="box"></div>
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>
+                            Email:-
+                        </td>
+                        <td>nikhilkumarsingh2000@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Phone:-
+                        </td>
+                        <td>7272090004,9838229115</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Address:-
+                        </td>
+                        <td>Vill and Post Bhojapur,<br> Disi Ghaziput,Pin No 233226<br>State Uttar Pradesh</td>
+                    </tr>
+
+                </table>
+                <div class="icons">
+                    <div class="links"><a href="https://www.linkedin.com/in/nikhil-kumar-singh-80a63622b"
+                            target="_blank"><img src="lindin.png"></a></div>
+                    <div class="links"><a
+                            href="https://api.whatsapp.com/send/?phone=9838229115&text&type=phone_number&app_absent=0"
+                            target="_blank"><img src="whatsapp.png"></a></div>
+                    <div class="links"><a href="https://www.instagram.com/nikkhil__rajpoot/?igshid=MzRlODBiNWFlZA%3D%3D"
+                            target="_blank"><img src="instragram.png"></a></div>
+                    <div class="links"><a href="https://www.facebook.com/nikhil.kumarsingh.5661" target="_blank"><img
+                                src="facebook.png"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
